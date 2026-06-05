@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'UnidreamLED';
+  src: url('/font/unidreamled.ttf') format('truetype');
+  font-display: swap;
+}
+
+div#runtime {
+  width: fit-content !important;
+  max-width: 100%;
+  margin: 0px auto !important;
+  color: #ffffff !important;
+  padding: 0px 0px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: 'UnidreamLED', 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+html[data-theme="dark"] div#runtime {
+  color: #c0c0c0 !important;
+}
+
+/* 页脚版权文字强制色 */
+#footer-wrap,
+#footer-wrap a,
+#footer .copyright,
+#footer .footer-info {
+  color: #ffffff !important;
+}
+
+/* 深色模式下自动变灰色 */
+html[data-theme="dark"] #footer-wrap,
+html[data-theme="dark"] #footer-wrap a,
+html[data-theme="dark"] #footer .copyright {
+  color: #c0c0c0 !important;
+}
